@@ -1,6 +1,6 @@
 {
-  "homepage": "http://vanessaReact.github.io/encuestasVanessa",
-  "name": "encuestasvanessa",
+  "homepage": "https://vanessaReact.github.io/encuestas-vanessa",
+  "name": "encuestas-vanessa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
