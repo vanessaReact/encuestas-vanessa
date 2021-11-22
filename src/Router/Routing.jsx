@@ -19,9 +19,9 @@ function Routing(){
 				<Route path="/encuestasVanessa/encuesta/seccion/:id" exact component={Seccion} />
 				<Route path="/encuestasVanessa/encuesta/seccion/preguntas/:id" exact component={Pregunta} />
 				<Route path="/encuestasVanessa/encuesta/seccion/preguntas/opciones/:id" exact component={Opcion} />
-				<Route path="/encuestasVanessa/login" component={Login} />
-				<Route path="/encuestasVanessa/logout" component={Logout} />
-				<Route path="/encuestasVanessa/register" component={Register} />
+				<Route path="/encuestasVanessa/login" exact component={Login} />
+				<Route path="/encuestasVanessa/logout" exact component={Logout} />
+				<Route path="/encuestasVanessa/register" exact component={Register} />
 			</Switch>
 		</>
     )

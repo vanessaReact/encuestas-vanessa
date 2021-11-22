@@ -33,11 +33,11 @@ export default class Login extends React.Component {
 				msg=""
 				console.log(res);
 				console.log(res.data);
-				localStorage.setItem("user", JSON.stringify(res.data));
+				localStorage.setItem("usuario", JSON.stringify(res.data));
 				this.setState({
 				errors: { 'usermsg': msg }
 			});
-			this.props.history.push("/encuesta");
+			this.props.history.push("/encuestasVanessa/encuesta");
 			}).catch(function (error) {
 				if (error.response) {
 					console.log("here in cath erormsg")

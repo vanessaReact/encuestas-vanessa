@@ -2,7 +2,7 @@ import React from 'react';
 import '../.././App.css';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-
+import logo from '../../logo777.png';
 function NavBar(){
     return (
 	<>
@@ -11,7 +11,7 @@ function NavBar(){
 		<Container>
 		
 		<Link to='/encuestasVanessa/'>
-			<img src='./logo777.png' width='50px'/>
+			<img src={logo} width='50px'/>
 			<Navbar.Brand href="/encuestasVanessa/">EnQestas</Navbar.Brand>
 		</Link>
 
@@ -29,7 +29,7 @@ function NavBar(){
 			<Nav.Link href="#Login">Login</Nav.Link>
 		</Link>
 
-		<Link to='encuestasVanessa/logout'>
+		<Link to='/encuestasVanessa/logout'>
 			<Nav.Link href="#Logout">Logout</Nav.Link>
 		</Link>
 

@@ -34,7 +34,7 @@ class Encuesta extends Component {
 
 
 	peticionGet = () => {
-		const loggedInUser = localStorage.getItem("user");
+		const loggedInUser = localStorage.getItem("usuario");
 		const user = jwt(loggedInUser)
 		if (loggedInUser) {
 			this.state.form.user_id = user.sub
@@ -48,7 +48,7 @@ class Encuesta extends Component {
 	}
 
 	peticionPost = async () => {
-		const loggedInUser = localStorage.getItem("user");
+		const loggedInUser = localStorage.getItem("usuario");
 		const user=jwt(loggedInUser)
 		if (loggedInUser) {
 			this.state.form.user_id = user.sub 
@@ -122,7 +122,7 @@ class Encuesta extends Component {
 	}
 
 	componentDidMount() {
-		const loggedInUser = localStorage.getItem("user");
+		const loggedInUser = localStorage.getItem("usuario");
 		const user = jwt(loggedInUser);
 		console.log(user.sub)
 		if (loggedInUser) {
